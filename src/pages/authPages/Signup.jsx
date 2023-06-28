@@ -37,7 +37,7 @@ const Signup = () => {
                 </div>
                 <div className="form-submit-button">
                     <p className='font-primary text-left'>By signing up you agree with out <span className='text-primary-color font-semibold'><Link to='/'>Terms & Conditions</Link></span></p>
-                    <button className='outline-hidden my-[1.5rem] h-[2.8rem] rounded-[5px] md:max-w-[25rem] w-[85%] border-none bg-primary-color text-white-color font-semibold text-[.9rem]'>SIGN UP</button>
+                    <button className='outline-hidden my-[1.5rem] h-[2.8rem] w-full rounded-[5px] border-none bg-primary-color text-white-color font-semibold text-[.9rem]'>SIGN UP</button>
                     <p>Already have an account <span className='text-primary-color font-semibold'><Link to='/login'>Log In</Link></span></p>   
                 </div>
             </form>
