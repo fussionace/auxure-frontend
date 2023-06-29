@@ -8,7 +8,6 @@ import { store } from './redux/store';
 
 // eslint-disable-next-line import/no-unassigned-import
 import './index.css';
-import { BrowserRouter as Router } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
