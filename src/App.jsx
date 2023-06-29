@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Signup from './pages/authPages/Signup';
+import Signup from './pages/unAuthPages/Signup';
 import './index.css'
 
 
