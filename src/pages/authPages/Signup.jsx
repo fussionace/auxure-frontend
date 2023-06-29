@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 
 const Signup = () => {
   return (
-    <div className='w-full flex items-center justify-center min-h-[100vh]'>
-        <aside className='md:block hidden w-[50%] h-full'>
-            <img src={ signup } alt="signup-image" />
+    <div className='w-full flex'>
+        <aside className='md:block hidden w-[50%] min-h-[100vh]'>
+            <img src={ signup } alt="signup-image"  className='h-full w-full'/>
         </aside>
-        <main className='min-h-[210vh] pt-[15rem] form-content md:w-[50%] w-full bg-accent-2 flex items-center justify-center flex-col text-center'>
-            <div className="form-title mb-[4rem]">
-                <h1 className='font-primary text-text-lighter md:text-[2.6rem] text-[2.1rem] mb-[1.7rem]'>Create an account</h1>
+        <main className='min-h-[100vh] form-content md:w-[50%] w-full bg-accent-2 flex flex-col items-center justify-center py-[1.8rem]'>
+            <div className="form-title text-center mb-[3rem]">
+                <h1 className='font-primary text-text-lighter mb-[1rem] md:text-[2.6rem] text-[2.1rem]'>Create an account</h1>
                 <span className="font-primary block text-text-lighter text-[1rem]">Get started with an account on Auxure</span>
             </div>
             {/* Google signup */}
@@ -20,7 +20,7 @@ const Signup = () => {
                     <Google />
                     SIGN UP WITH GOOGLE
                 </button>
-                <small className="block font-semibold my-[1.6rem]">OR</small>
+                <small className="block text-center font-semibold my-[1.6rem]">OR</small>
             </div>
 
             {/* main form elements */}
@@ -36,9 +36,9 @@ const Signup = () => {
                     <small className='text-left block font-primary'>8 or more characters</small>
                 </div>
                 <div className="form-submit-button">
-                    <p className='font-primary text-left'>By signing up you agree with out <span className='text-primary-color font-semibold'><Link to='/'>Terms & Conditions</Link></span></p>
-                    <button className='outline-hidden my-[1.5rem] h-[2.8rem] w-full rounded-[5px] border-none bg-primary-color text-white-color font-semibold text-[.9rem]'>SIGN UP</button>
-                    <p>Already have an account <span className='text-primary-color font-semibold'><Link to='/login'>Log In</Link></span></p>   
+                    <p className='font-primary'>By signing up you agree with out <span className='text-primary-color font-semibold'><Link to='/'>Terms & Conditions</Link></span></p>
+                    <button className='outline-hidden md:my-[1.2rem] my-[.9rem] h-[2.8rem] w-full rounded-[5px] border-none bg-primary-color text-white-color font-semibold text-[.9rem]'>SIGN UP</button>
+                    <p className='text-center'>Already have an account <span className='text-primary-color font-semibold'><Link to='/login'>Log In</Link></span></p>   
                 </div>
             </form>
         </main>
