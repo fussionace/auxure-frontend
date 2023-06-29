@@ -13,12 +13,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.1",
-<<<<<<< HEAD
-    "react-router-dom": "^6.14.0"
-=======
     "react-router-dom": "^6.13.0",
     "react-scroll": "^1.8.9"
->>>>>>> d255897a242861437c23fcbb53a525c5270d5735
   },
   "eslintConfig": {
     "env": {
