@@ -1,7 +1,7 @@
 import React from 'react'
-import { ReactComponent as Google } from '../../assets/svg/google.svg';
 import signup from '../../assets/img/signup.png';
 import { Link } from 'react-router-dom';
+import { GoogleIcon } from '../../assets/svg/svg-icons';
 
 const Signup = () => {
   return (
@@ -17,7 +17,7 @@ const Signup = () => {
             {/* Google signup */}
             <div className="google-signup md:max-w-[25rem] w-[85%]">
                 <button className='h-[2.8rem] w-full flex border-solid border-[1px] font-semibold border-primary bg-accent-3 rounded-[5px] items-center justify-center gap-[1rem] text-[.9rem]'>
-                    <Google />
+                    <GoogleIcon />
                     SIGN UP WITH GOOGLE
                 </button>
                 <small className="block text-center font-semibold my-[1.6rem]">OR</small>

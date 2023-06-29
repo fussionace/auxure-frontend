@@ -13,6 +13,7 @@ import { ReactComponent as Icon10 } from './icon-user.svg';
 import { ReactComponent as Icon11 } from './linkedin.svg';
 import { ReactComponent as Icon12 } from './facebook.svg';
 import { ReactComponent as Icon13 } from './twitter.svg';
+import { ReactComponent as Google } from '../../assets/svg/google.svg';
 
 export const LogoWhiteIcon = React.memo(Icon1);
 export const AuxureLogoIcon = React.memo(Icon2);
@@ -27,3 +28,4 @@ export const UserIcon = React.memo(Icon10);
 export const LinkedIcon = React.memo(Icon11);
 export const FacebookIcon = React.memo(Icon12);
 export const TwitterIcon = React.memo(Icon13);
+export const GoogleIcon = React.memo(Google);
