@@ -7,8 +7,10 @@ import Carousel from '../../components/Carousel';
 const Signup = () => {
   return (
     <div className='w-full flex'>
-        <aside className='md:block hidden w-[50%] min-h-screen'>
-            <Carousel />
+        <aside className='carousel-wrapper relative md:block hidden w-[50%] min-h-screen overflow-hidden'>
+            <div className="carousel-items h-full">
+                <Carousel/>
+            </div>
         </aside>
         <main className='min-h-screen form-content md:w-[50%] w-full bg-accent-2 flex flex-col items-center justify-center py-[1.8rem]'>
             <div className="form-title text-center mb-[4rem] text-lighter">
