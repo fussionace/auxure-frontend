@@ -6,7 +6,7 @@ import Carousel from '../../components/Carousel';
 
 const Signup = () => {
   return (
-    <div className='w-full flex'>
+    <div className='w-full flex overflow-y-hidden min-h-screen'>
         <aside className='carousel-wrapper relative md:block hidden w-[50%] min-h-screen overflow-hidden'>
             <div className="carousel-items h-full">
                 <Carousel/>

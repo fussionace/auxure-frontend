@@ -3,7 +3,6 @@ import img1 from '../assets/img/carouselImages/img1.png'
 import img2 from '../assets/img/carouselImages/img2.png'
 import img3 from '../assets/img/carouselImages/img3.png'
 
-
 const carousel = () => {
 
   const [ activeIndex, setActiveIndex ] = useState(0);
@@ -26,8 +25,7 @@ const carousel = () => {
   const currentTransform = -activeIndex * 100;
 
   return (
-    <>
-    
+    <> 
       <div className="h-full container flex transition-transform" style={{transform:`translateX(${currentTransform}%)`}}>
         {
           carouselArray.map((item) => (
@@ -49,8 +47,6 @@ const carousel = () => {
     </>
   )
 }
-
-
 
 
 export default carousel
