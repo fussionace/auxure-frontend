@@ -2,17 +2,28 @@ import React from 'react'
 import signup from '../../assets/img/signup.png';
 import { Link } from 'react-router-dom';
 import { GoogleIcon } from '../../assets/svg/svg-icons';
-import Carousel from '../../components/Carousel';
+import Carousel from '../../components/bits/Carousel';
+import slider1 from '../../assets/img/slider1.png';
+import slider2 from '../../assets/img/slider2.png';
+import slider3 from '../../assets/img/slider3.png';
 
 const Signup = () => {
   return (
-    <div className='w-full flex overflow-y-hidden min-h-screen'>
-        <aside className='carousel-wrapper relative md:block hidden w-[50%] min-h-screen overflow-hidden'>
-            <div className="carousel-items h-full">
-                <Carousel/>
-            </div>
-        </aside>
-        <main className='min-h-screen form-content md:w-[50%] w-full bg-accent-2 flex flex-col items-center justify-center py-[1.8rem]'>
+    <div className='w-full flex overflow-hidden min-h-screen'>
+        <div className='md:w-[50%] hidden md:block fixed left-0 top-0'>
+            <Carousel showControls={false} showIndicators={true}>
+            {[slider1, slider2, slider3].map((img, index) => (
+                <div key={index}>
+                <img
+                    src={img}
+                    alt={`auxure slider img ${index + 1}`}
+                    className='w-full h-full block object-cover object-top'
+                />
+                </div>
+            ))}
+            </Carousel>
+        </div>
+        <main className='md:ml-[50%] overflow-y-scroll py-[3rem] form-content md:w-[50%] w-full bg-accent-2 flex flex-col items-center justify-center'>
             <div className="form-title text-center mb-[4rem] text-lighter">
                 <h1 className='font-primary mb-[1.8rem] md:text-[2.2rem] font-medium text-[2.1rem]'>Create an account</h1>
                 <span className="font-primary block text-[1.1rem]">Get started with an account on Auxure</span>
