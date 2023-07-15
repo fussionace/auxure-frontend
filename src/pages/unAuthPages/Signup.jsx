@@ -30,23 +30,23 @@ const Signup = () => {
             </div>
             {/* Google signup */}
             <div className="google-signup md:max-w-[25rem] w-[85%]">
-                <button className='h-[3.2rem] w-full flex border-solid border-[1px] font-semibold border-primary bg-white rounded-[10px] items-center justify-center gap-[.7rem] text-[.9rem]'>
+                <Link to='#' className='flex py-[0.675rem] px-[1.25rem] justify-center items-center gap-[0.625rem] self-stretch bg-white border-[1px] border-solid border-secondary rounded-[0.625rem] font-semibold leading-1 text-base text-color'>
                     <GoogleIcon />
                     SIGN UP WITH GOOGLE
-                </button>
+                </Link>
                 <span className="block text-center font-semibold my-[1.3rem] text-lighter text-[1rem]">OR</span>
             </div>
 
             {/* main form elements */}
             <form className='md:max-w-[25rem] w-[85%]'>
                 <div className="form-element">
-                    <input type="email" className="h-[3.2rem] w-full border-solid border-[1px] rounded-[10px] px-[2rem] placeholder:text-lighter outline-none placeholder:font-primary text-[16px] border-primary" placeholder='Email address'/>
+                    <input type="email" className='w-full py-[0.575rem] px-[2.25rem] self-stretch rounded-[0.625rem] bg-white border-[1px] border-secondary border-solid outline-primary placeholder-lighter text-base font-light leading-3' placeholder='Email address'/>
                 </div>
-                <div className="form-element">
-                    <input type="password" className="my-[1.5rem] h-[3.2rem] w-full border-solid border-[1px] rounded-[10px] px-[2rem] placeholder:text-lighter placeholder:font-primary outline-none text-[16px] outline-hidden border-primary" placeholder='Password'/>
+                <div className="form-element my-[1rem]">
+                    <input type="password" className="w-full py-[0.575rem] px-[2.25rem] self-stretch rounded-[0.625rem] bg-white border-[1px] border-secondary border-solid outline-primary placeholder-lighter text-base font-light leading-3" placeholder='Password'/>
                 </div>
                 <div className="form-element mb-[2rem]">
-                    <input type="password" className="mb-[.5rem] h-[3.2rem] w-full border-solid border-[1px] rounded-[10px] px-[2rem] placeholder:text-lighter outline-none placeholder:font-primary text-[16px] border-primary" placeholder='Confirm Password'/>
+                    <input type="password" className="w-full py-[0.575rem] px-[2.25rem] self-stretch rounded-[0.625rem] bg-white border-[1px] border-secondary border-solid outline-primary placeholder-lighter text-base font-light leading-3" placeholder='Confirm Password'/>
                     <small className='text-left block font-primary text-lighter text-[.85rem]'>8 or more characters</small>
                 </div>
                 <div className="form-submit-button">
