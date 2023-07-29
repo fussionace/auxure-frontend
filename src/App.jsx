@@ -5,7 +5,7 @@ import Home from './pages/unAuthPages/Home';
 import Login from './pages/unAuthPages/Login';
 import ErrorPage from './pages/unAuthPages/NotFound';
 import Shop from './pages/unAuthPages/Shop';
-import { home, login, shop } from './utils/routes';
+import { home, login, shop, signup } from './utils/routes';
 
 export const router = createBrowserRouter([
   {
