@@ -1,6 +1,4 @@
-
 const Button = ({ label, type, variant = 'primary', classes }) => {
-
     const buttonType = () => {
         if (variant === "primary") {
             return "bg-accent-1"

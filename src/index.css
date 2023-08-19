@@ -6,7 +6,8 @@
 
 html {
   box-sizing: border-box;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
+  /* Firefox */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,7 +16,8 @@ html {
 }
 
 html::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+  display: none;
+  /* Safari and Chrome */
 }
 
 body {
@@ -24,20 +26,41 @@ body {
   line-height: 120%;
   font-weight: 300;
 }
-img{
+
+img {
   max-width: 100%;
   height: auto;
 }
 
+input {
+  outline: none;
+  border: 2px solid #B8B8B8;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #4E4033;
+}
+
+@media screen and (min-width:768px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+
 @layer components {
   .transition-add {
-    @apply transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200;
+    @apply transition ease-in-out hover: -translate-y-1 hover:scale-110 duration-200;
   }
 }
 
 @layer components {
   .nav_link-items {
-    @apply text-white uppercase font-medium md:text-base text-md border-b-[.125rem] text-center px-[1rem] pb-[1.5rem] md:pb-0 md:px-0 border-secondary last:border-b-0 last:pb-0 md:border-0 cursor-pointer tracking-wider md:tracking-normal;
+    @apply text-white uppercase font-medium md: text-base text-md border-b-[.125rem] text-center px-[1rem] pb-[1.5rem] md:pb-0 md:px-0 border-secondary last:border-b-0 last:pb-0 md:border-0 cursor-pointer tracking-wider md:tracking-normal;
   }
 }
 
@@ -64,11 +87,9 @@ img{
 }
 
 .btn-cta {
-  background: radial-gradient(
-    231% 135.8% at 0.9% 2.98%,
-    rgba(255, 165, 0, 0.4) 0%,
-    rgba(255, 165, 0, 0) 100%
-  );
+  background: radial-gradient(231% 135.8% at 0.9% 2.98%,
+      rgba(255, 165, 0, 0.4) 0%,
+      rgba(255, 165, 0, 0) 100%);
   backdrop-filter: blur(21px);
 }
 
