@@ -24,6 +24,10 @@ body {
   line-height: 120%;
   font-weight: 300;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
 
 @layer components {
   .transition-add {

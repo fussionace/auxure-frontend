@@ -6,6 +6,7 @@ export default {
       primary: '#a27738',
       secondary: '#d4b483',
       white: '#ffffff',
+      gray: '#B8B8B8',
       'accent-1': '#ffa500',
       'accent-2': '#f8f3ed',
       'accent-3': '#f7f5f3',

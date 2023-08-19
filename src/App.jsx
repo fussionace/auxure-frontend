@@ -1,18 +1,18 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
+import Checkout from './pages/unAuthPages/Checkout';
 import ErrorPage from './pages/unAuthPages/ErrorPage';
 import Home from './pages/unAuthPages/Home';
 import Login from './pages/unAuthPages/Login';
 import Shop from './pages/unAuthPages/Shop';
 import Signup from './pages/unAuthPages/Signup';
-import { home, login, shop, signup } from './utils/routes';
+import { checkout, home, login, shop, signup } from './utils/routes';
 
 const router = createBrowserRouter([
   {
     path: home,
     element: <Home />,
     errorElement: <ErrorPage />,
-    
   },
   {
     path: login,
@@ -25,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: shop,
     element: <Shop />,
+  },
+  {
+    path: checkout,
+    element: <Checkout />,
   },
 ]);
 
