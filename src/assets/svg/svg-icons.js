@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { ReactComponent as Icon3 } from './arrows-down-top-move.svg';
 import { ReactComponent as Icon2 } from './auxure-logo.svg';
 import { ReactComponent as Icon16 } from './bar-icon.svg';
@@ -18,6 +17,15 @@ import { ReactComponent as Icon1 } from './logo-white.svg';
 import { ReactComponent as Icon6 } from './logo.svg';
 import { ReactComponent as Icon13 } from './twitter.svg';
 import { ReactComponent as Google } from '../../assets/svg/google.svg';
+import { ReactComponent as gridView } from '../../assets/svg/gridView.svg';
+import { ReactComponent as listView } from '../../assets/svg/listView.svg';
+import { ReactComponent as arrowdown } from '../../assets/svg/arrowdown.svg';
+import { ReactComponent as arrowUp } from '../../assets/svg/arrowUp.svg';
+import { ReactComponent as filter } from '../../assets/svg/filter.svg';
+import { ReactComponent as star } from '../../assets/svg/star.svg';
+import { ReactComponent as like } from '../../assets/svg/like.svg';
+import { ReactComponent as cart } from '../../assets/svg/cart.svg';
+import { ReactComponent as chevronLeft } from '../../assets/svg/chevronLeft.svg';
 
 export const LogoWhiteIcon = React.memo(Icon1);
 export const AuxureLogoIcon = React.memo(Icon2);
@@ -36,3 +44,12 @@ export const GoogleIcon = React.memo(Icon14);
 export const CheckIcon = React.memo(Icon15);
 export const BarIcon = React.memo(Icon16);
 export const CloseIcon = React.memo(Icon17);
+export const GridView = React.memo(gridView);
+export const ListView = React.memo(listView);
+export const ArrowDown = React.memo(arrowdown);
+export const ArrowUp = React.memo(arrowUp);
+export const Filter = React.memo(filter);
+export const Star = React.memo(star);
+export const Like = React.memo(like);
+export const Cart = React.memo(cart);
+export const ChevronLeft = React.memo(chevronLeft);

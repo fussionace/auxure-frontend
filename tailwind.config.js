@@ -10,14 +10,17 @@ export default {
       'accent-2': '#f8f3ed',
       'accent-3': '#f7f5f3',
       'accent-4': '#fc5d37',
+      'accent-5': '#F9F9F9',
+      'gray': '#737373',
       'background-color': '#fcfaf8',
+      'light-gray': '#ECECEC',
       color: '#312921',
       lighter: '#4e4033',
       transparent: 'transparent',
       black: '#000000',
     },
     fontFamily: {
-      pimary: ['Poppins', 'sans-serif'],
+      primary: ['Poppins', 'sans-serif'],
       secondary: ['Cinzel', 'serif'],
     },
     lineHeight: {
