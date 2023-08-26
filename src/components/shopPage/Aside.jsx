@@ -9,7 +9,7 @@ const Aside = ({ setShowAside }) => {
   
   // fragrance names
   const fragrance = [
-    'Floral', 'Citrus', 'Woody', 'Oriental', 'Aquatic', 'Spicy', 'Green'
+    'Floral', 'Citrus','Woody', 'Oriental', 'Aquatic', 'Spicy', 'Green'
   ]
 
   const gender = [
