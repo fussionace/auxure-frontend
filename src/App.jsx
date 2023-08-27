@@ -1,13 +1,14 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Signup from './pages/unAuthPages/Signup';
 import './index.css'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import ErrorPage from './pages/unAuthPages/ErrorPage';
 import Home from './pages/unAuthPages/Home';
 import Login from './pages/unAuthPages/Login';
-import ErrorPage from './pages/unAuthPages/NotFound';
-import Shop from './pages/unAuthPages/Shop';
+import Shop from './pages/unAuthPages/Shop
+import Signup from './pages/unAuthPages/Signup';
 import { home, login, shop, signup } from './utils/routes';
 
-export const router = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: home,
     element: <Home />,
@@ -22,7 +23,17 @@ export const router = createBrowserRouter([
     element: <Login />,
   },
   {
+    path: signup,
+    element: <Signup />,
+  },
+  {
     path: shop,
     element: <Shop />,
   },
 ]);
+
+const App = () => {
+  return <RouterProvider router={router} />;
+};
+
+export default App;
